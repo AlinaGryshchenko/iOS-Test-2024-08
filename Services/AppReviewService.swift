@@ -82,8 +82,4 @@ final class AppReviewService: AppReviewRequesting {
     let canRequest = sessionsPassed && timePassed && cooldownPassed
     return (sessions, time, cooldownPassed, canRequest)
   }
-  
-  private func canRequestReview() -> Bool {
-    checkConditions().canRequest
-  }
 }
