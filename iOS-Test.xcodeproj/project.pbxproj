@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A7F03FF2EA2681F00CDBEEE /* UserSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F03FE2EA2681B00CDBEEE /* UserSessionService.swift */; };
+		9A7F04012EA2683200CDBEEE /* AppReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F04002EA2682F00CDBEEE /* AppReviewService.swift */; };
 		EF9196922B3B1D5700DC508B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9196912B3B1D5700DC508B /* AppDelegate.swift */; };
 		EF91969B2B3B1D5C00DC508B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF91969A2B3B1D5C00DC508B /* Assets.xcassets */; };
 		EF91969E2B3B1D5C00DC508B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF91969C2B3B1D5C00DC508B /* LaunchScreen.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A7F03FE2EA2681B00CDBEEE /* UserSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionService.swift; sourceTree = "<group>"; };
+		9A7F04002EA2682F00CDBEEE /* AppReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewService.swift; sourceTree = "<group>"; };
 		EF91968E2B3B1D5700DC508B /* iOS-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9196912B3B1D5700DC508B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF91969A2B3B1D5C00DC508B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,10 +51,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A7F04022EA2683900CDBEEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F03FE2EA2681B00CDBEEE /* UserSessionService.swift */,
+				9A7F04002EA2682F00CDBEEE /* AppReviewService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EF9196852B3B1D5700DC508B = {
 			isa = PBXGroup;
 			children = (
-				EFB579DD2C62888A0092710B /* Services */,
+				9A7F04022EA2683900CDBEEE /* Services */,
 				EF9196B12B3B1DA900DC508B /* Dummy */,
 				EF9196912B3B1D5700DC508B /* AppDelegate.swift */,
 				EF9196B22B3B263300DC508B /* SceneDelegate.swift */,
@@ -81,13 +94,6 @@
 				EF9196A92B3B1D8F00DC508B /* DummyViewController.swift */,
 			);
 			path = Dummy;
-			sourceTree = "<group>";
-		};
-		EFB579DD2C62888A0092710B /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9196AF2B3B1D8F00DC508B /* DummyViewController.swift in Sources */,
+				9A7F04012EA2683200CDBEEE /* AppReviewService.swift in Sources */,
 				EFB579DC2C6273090092710B /* Services.swift in Sources */,
+				9A7F03FF2EA2681F00CDBEEE /* UserSessionService.swift in Sources */,
 				EF9196B32B3B263300DC508B /* SceneDelegate.swift in Sources */,
 				EF9196922B3B1D5700DC508B /* AppDelegate.swift in Sources */,
 				EF9196AC2B3B1D8F00DC508B /* DummyPresenter.swift in Sources */,

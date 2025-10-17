@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import os.log
 
 protocol DummyDisplayLogic: AnyObject {
   func display(model: DummyModels.Load.ViewModel)
@@ -13,16 +14,9 @@ class DummyViewController: UIViewController {
   var interactor: DummyBusinessLogic?
   var router: DummyRoutingLogic?
   
-  // MARK: - Outlets
-  
-  // MARK: - Properties
-  
-  // MARK: - Lifecycle
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     interactor?.load(request: .init())
-    
     setupUI()
   }
  
@@ -30,7 +24,6 @@ class DummyViewController: UIViewController {
     super.viewWillAppear(animated)
   }
   
-  // MARK: - Common
   func setupUI() {
     self.navigationItem.title = "Hello world!"
   }

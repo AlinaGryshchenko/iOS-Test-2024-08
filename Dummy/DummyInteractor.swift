@@ -5,7 +5,6 @@
 
 // Implemented by Interactor
 protocol DummyBusinessLogic {
-  // Loads the list of the items and passes Load.Response to Presenter
   func load(request: DummyModels.Load.Request)
 }
 

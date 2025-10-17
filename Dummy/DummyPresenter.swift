@@ -13,7 +13,6 @@ class DummyPresenter {
 }
 
 extension DummyPresenter: DummyPresentationLogic {
-  // Transforms Load.Response into ViewModel to be displayed by the ViewController
   func present(response: DummyModels.Load.Response) {
     view?.display(model: .init())
   }

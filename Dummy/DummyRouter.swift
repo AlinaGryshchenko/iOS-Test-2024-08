@@ -17,7 +17,11 @@ extension DummyRouter: DummyRoutingLogic {
     
 }
 
+// MARK: - Module Factory
+
 extension DummyRouter {
+  
+  /// Creates and configures Dummy module with all dependencies.
   static func createModule() -> DummyViewController {
     let controller = UIStoryboard(name: "Dummy", bundle: nil)
       .instantiateViewController(withIdentifier: "DummyViewController") as! DummyViewController
